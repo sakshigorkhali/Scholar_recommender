@@ -1,4 +1,5 @@
 **Project Description:**
+
 Our aim is to build a content-based recommender system that helps researchers quickly find relevant PubMed articles for a given GEO dataset(genome dataset) by identifying and recommending similar literature.
 
 We have two dataset: Pubmed data that contains data about pubmed articles including pubmed id (pmid) and Geo dataset which is a meta data of geo expression.

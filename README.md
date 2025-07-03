@@ -10,26 +10,25 @@ Our two dataset both have PMIDs column which links the geo and pubmed data toget
 
 -------------------------------------------------------------------------------------------
 This is the first notebook that contains:
-Data Cleaning and exploration process
+- Data Cleaning and exploration process
 Vectorization techniques:
-TF-IDF
-Weighted TF-IDF
-Word2Vec
-BioWord2Vec
-
+- TF-IDF
+- Weighted TF-IDF
+- Word2Vec
+- BioWord2Vec
 
 **Requirements:**
-pandas = 2.2.2
-numpy = 1.26.4
-nltk = 3.9.1
-spacy = 3.8.7
-matplotlib = 3.10.0
-seaborn = 0.13.2
-scikit-learn = 1.6.1
-scipy = 1.13.1
-gensim = 4.3.3
-wordcloud = 1.9.4
-Bio-word2vec pre trained embedding (BioWordVec_PubMed_MIMICIII_d200.vec.bin) file included among the files. can be found in !wget https://ftp.ncbi.nlm.nih.gov/pub/lu/Suppl/BioSentVec/BioWordVec_PubMed_MIMICIII_d200.vec.bin
+- pandas = 2.2.2
+- numpy = 1.26.4
+- nltk = 3.9.1
+- spacy = 3.8.7
+- matplotlib = 3.10.0
+- seaborn = 0.13.2
+- scikit-learn = 1.6.1
+- scipy = 1.13.1
+- gensim = 4.3.3
+- wordcloud = 1.9.4
+- Bio-word2vec pre trained embedding (BioWordVec_PubMed_MIMICIII_d200.vec.bin) file included among the files. can be found in !wget https://ftp.ncbi.nlm.nih.gov/pub/lu/Suppl/BioSentVec/BioWordVec_PubMed_MIMICIII_d200.vec.bin
 
 Dataset used: geo_final_5000.csv, pubmed_final_5000.csv
 

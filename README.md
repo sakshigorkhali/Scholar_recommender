@@ -1,13 +1,16 @@
 **Project Description:**
 
 Our aim is to build a content-based recommender system that helps researchers quickly find relevant PubMed articles for a given GEO dataset(genome dataset) by identifying and recommending similar literature.
+This project was inspired by paper: "Recommender system of scholarly papers using public datasets", PMCID: PMC8378599
 
-We have two dataset: Pubmed data that contains data about pubmed articles including pubmed id (pmid) and Geo dataset which is a meta data of geo expression.
+We scraped data using NCBI Entrez API to get genome metadata(geo series) and pubmed article data, we also made sure to download the relevant pubmed article that was linked with the geo series(using the mentioned pmid in the geo series)
 
-As our recommender system is completely content based we aim to explore different vectorization techniques to evaluate their performance in recommending relevant papers and later combine two best performing to buil a hybrid recommender system
+Dataset: Pubmed data that contains data about pubmed articles including pubmed id (pmid) and Geo dataset which is a meta data of geo expression. We extracted 3500 Geo series data and 5000 pubmed data
+
+As our recommender system is completely content based we aim to explore different vectorization techniques followed by cosine similarity to rank and evaluate their performance in recommending relevant papers and later combine two best performing to build a hybrid recommender system
 
 For evaluation: 
-Our two dataset both have PMIDs column which links the geo and pubmed data together. (pmid is unique identiciation article number so when researchers upload their geo metadata they also submit a pind that they wrote which related to research paper that was written based on the data. so during eval we check where this matching pmid is recommended in the top 10 or not to evaluate performance.
+Our two dataset both have PMIDs column which links the geo and pubmed data together. (pmid is unique identiciation article number so when researchers upload their geo metadata they also submit a pmid that they wrote which related to research paper that was written based on the data. so during eval we check where this matching pmid is recommended in the top 10 or not to evaluate performance.
 
 -------------------------------------------------------------------------------------------
 This is the first notebook that contains:
